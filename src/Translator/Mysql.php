@@ -543,7 +543,7 @@ class Mysql implements TranslatorInterface
             }
             // when we have an entire query as where value, we 
             // need to translate it and add its parameters to ours
-            elseif (is_object($where[3]) && ($where[3] instanceof BaseQuery))
+            elseif (is_object($where[3]) && ($where[3] instanceof SelectBase))
             {
                 $translator = new static;
                 list($sql, $params) = $translator->translate($where[3]);
