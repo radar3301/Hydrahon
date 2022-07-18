@@ -12,6 +12,7 @@ use ClanCats\Hydrahon\Query\Expression;
 use ClanCats\Hydrahon\TranslatorInterface;
 use ClanCats\Hydrahon\Exception;
 
+use ClanCats\Hydrahon\Query\Sql\SelectBase;
 use ClanCats\Hydrahon\Query\Sql\Select;
 use ClanCats\Hydrahon\Query\Sql\Insert;
 use ClanCats\Hydrahon\Query\Sql\Replace;
